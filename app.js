@@ -25,7 +25,22 @@ function list_files_html(req,res) {
       `);
 }
 
-app.use(express.static('images'));
-app.use(express.static('public'));
-app.get('/', list_files_html);
-app.listen(port, () => console.log(`Fired up on port ${port}!`));
+function landing(req,res) {
+  res.send(`<head>
+      <link rel="stylesheet" type="text/css" href="main.css">
+      </head>
+
+      <h3> Display Images </h3>
+      
+      <form method="get" action="/images">
+      Folder: <input type="text" name="folder"> 
+      <input type="submit">
+      </form>`
+      )
+}
+
+      app.use(express.static('images'));
+      app.use(express.static('public'));
+      app.get('/images', list_files_html);
+      app.get('/', landing);
+      app.listen(port, () => console.log(`Fired up on port ${port}!`));
