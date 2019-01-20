@@ -1,0 +1,23 @@
+{
+  "name": "display_images",
+  "version": "0.0.1",
+  "description": "Displays images in folder images",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmorley/display_images.git"
+  },
+  "author": "Alexander Morley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexmorley/display_images/issues"
+  },
+  "homepage": "https://github.com/alexmorley/display_images#readme"
+}
